@@ -1,0 +1,809 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    height: vh;
+    background-color: #252525;  
+    position: relative;
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.names{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+}
+.myname{
+    font-size: 1.5rem;
+}
+.logo{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgb(238, 22, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: colorChanging 3s linear infinite;
+}
+.myde{
+    display: flex;
+    gap: 2rem;
+}
+.extraa a{
+    text-decoration: none;
+    color: white;
+}
+.extraa a:hover{
+    color: red;
+    border: 2px solid green;
+    border-radius: 20px;
+    padding: .5rem .5rem;
+}
+.sidebar{
+    margin-top: .5rem;
+}
+.sidebar i{
+    font-size: 0px;
+    margin-right: 1rem;
+}
+.sidebar i:hover{
+    cursor: pointer;
+}
+.sidebar-content{
+    margin-top: 1rem;
+    display: none;
+    position: absolute;
+}
+
+
+     /* index page design */
+.body{
+    height: 100%; 
+    background-color: #252525;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    
+    
+}  
+#cursor{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    animation: colorChanging 3s linear infinite;
+ 
+}
+#cursor::after{
+    content: '';
+    inset: -5px;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+    opacity: .8;
+    filter: blur(10px);
+    
+    
+}
+@keyframes colorChanging{
+    0%{
+        filter: hue-rotate(45deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.layer1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.image-div{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #444444;
+    margin-top: 7rem;
+}
+.image-div:hover{
+    transform: scale(1.3);
+}
+
+.image-div img{
+    height: 20rem;
+    width: 20rem;
+}
+
+.work-div{
+    margin-left: 5rem;
+    margin-top: 7rem;
+    width: 35%;
+    color: white;
+}
+.heading{
+    color: #a7a5a5;
+    font-size: 18px;
+}
+.more-about-me{
+    color: #a7a5a5;
+    font-size: 14px;
+}
+.btn-div{
+    display: flex;
+    margin-top: 3rem;
+}
+.download-btn-div{
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #007ced;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    cursor:grab;
+}
+.download-btn-div:hover{
+    background-color: #007ced;
+}
+.contact-btn-div{
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-left: 1rem;
+    cursor:grab;
+}
+.contact-btn-div:hover{
+    background-color: rgb(90, 89, 89);
+}
+.contact-btn-div a{
+    text-decoration: none;
+    color: white;
+    cursor:grab;
+}
+
+.empty-div{
+    height: 5rem;
+    width: 100%;
+}
+.what-i-do{
+    height: 4rem;
+    color: white;
+}
+.clients:hover{
+    color: rgb(252, 253, 253);
+}
+.blue-div{
+    height: .1rem;
+    width: 2rem;
+    background-color: #1c72ca;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    float: left;
+}
+.transparent-div{
+    height: .1rem;
+    width: 5rem;
+    float: left;
+    background-color: #2A2A2A;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.content-div{
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.content-left-div{
+    color: white;
+}
+.content-right-div{
+    color: white;
+    padding-left: 3rem;
+}
+.icon-heading-div{
+    display: flex;
+    align-items: center;
+}
+.icon-de{
+    color: #007ced;
+    font-size: 30px;
+}
+.inside{
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    color: #5d5d5d;
+}
+.clients-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #5c5c5c;
+}
+.fun-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fun1-div{
+    height: 10rem;
+    width: 12rem;
+    border: 2px solid #444444;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #333333;
+    
+}
+.fun1-div:hover{
+    animation: myAnimate 0.4s  0s ease-in-out infinite alternate;
+}
+.span{
+    font-size: 40px;
+    margin-left: 1.5rem;
+    color: #5d5d5d;
+}
+.new-icon{
+    margin-left: 1rem;
+}
+@keyframes myAnimate{
+    from{
+        translate: 0px;
+    }
+    to{
+        translate: 20px;
+    }
+}
+
+
+/* footer design */
+
+.footer-div{
+    width: 100%;
+    height: 5rem;
+    border-top: 2px solid #323232;
+    padding-top: 1rem;
+    background-color: #222222;
+    margin-top: 2rem;
+}
+.anchor-de{
+    margin-left: 3rem;
+    text-decoration: none;
+    color: #7f7f7f;
+}
+.anchor-de:hover{
+    color: white;
+}
+
+
+
+/* Resume page design */
+
+.center-div{
+    width: 100%;
+    height: 100%;
+    margin: 3rem 0;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+}
+
+.backup-div{
+    background-color: #252525;
+    width: 100%;
+    
+}
+
+.lower-div{
+    display: flex;
+    width: 100%;
+    background-color: #252525;
+    
+}
+.lower-left{
+    margin-left: 3rem;
+    width: 50%;
+}
+.lower-right{
+    width: 50%;
+}
+.main-line{
+    height: .5rem;
+    width: 6rem;
+    background-color: #222222;
+    border-radius: 10px;
+    border: 1px solid #4e4e4e;
+    margin-top: 1rem;
+}
+.sub-line{
+    height: 5px;
+    width: 60%;
+    background-color: #007ced;
+    border-radius: 10px;
+    border: 1px solid #4e4e4e;
+}
+
+.main-left{
+    display: flex;
+}
+.edu1{
+    display: flex;
+    
+}
+.year1{
+    width: 4rem;
+    height: 2rem;
+    border: 2px solid #007ced;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -2rem;
+    background-color: black;
+   
+    
+}
+.year1::after{
+    content: "Ranchi University";
+    color: white;
+    position: absolute;
+    left: 5rem;
+    font-size: 14px;
+   
+}
+
+
+.main-left{
+    width:100%;
+}
+.l1-div{
+    height: vh;
+    width: .2rem;
+    background-color: #4e4e4e;
+    
+}
+   
+.l2-div{
+    height: vh;
+    margin-left: 1rem;
+    width: 75%;
+    position: relative;
+    color: white;
+}
+.divider-line{
+    width: 100%;
+    height: .1rem;
+    border: 1px solid #4e4e4e;
+    position: absolute;
+    left: -1rem;
+}
+.year2{
+    width: 4rem;
+    height: 2rem;
+    border: 2px solid #007ced;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -2rem;
+    background-color: black;
+}
+.year2::after{
+    content: "ICSE Board";
+    color: white;
+    position: absolute;
+    left: 5rem;
+    font-size: 14px;
+   
+}
+.year3{
+    width: 4rem;
+    height: 2rem;
+    border: 2px solid #007ced;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -2rem;
+    background-color: black;
+}
+.year3::after{
+    content: "Xyz Company";
+    color: white;
+    position: absolute;
+    left: 5rem;
+    font-size: 14px;  
+}
+
+.skill-div{
+    width: 100%;
+    display: flex;
+    padding-top: 3rem;
+    
+}
+.skill-left{
+    margin-left: 3rem;
+    width: 40%;
+}
+.skill-right{
+    margin-left: 4rem;
+    width: 40%;
+}
+.skill-percentage-flex{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.common-main-line{
+    width: 100%;
+    height: .25rem;
+    border: 2px solid #4e4e4e;
+    border-radius: 20px;
+    /* padding: .1rem .01rem; */
+}
+.ui-sub-line{
+    width: 95%;
+    height: .09rem;
+    background-color: #007ced;
+}
+.print-sub-line{
+    width: 75%;
+    height: .09rem;
+    background-color: #007ced;   
+}
+.logo-sub-line{
+    width: 90%;
+    height: .09rem;
+    background-color: #007ced;   
+}
+.graphic-sub-line{
+    width: 85%;
+    height: .09rem;
+    background-color: #007ced;   
+}
+
+.html-sub-line{
+    width: 100%;
+    height: .09rem;
+    background-color: #007ced;
+}
+.smarty-sub-line{
+    width: 80%;
+    height: .09rem;
+    background-color: #007ced;
+}
+
+
+/* Contact page design */
+
+.lower-divC{
+    width: 90%;
+    margin-left: 2rem;
+}
+.add-img-divC{
+    width: 100%;
+    height: 18rem;
+    padding: 1rem 1rem;
+}
+.add-img-divC iframe{
+    width: 100%;
+    height: 100%;
+}
+.content-main-divC{
+    width: 100%;
+    display: flex;
+    margin: 2rem 1rem;
+}
+.iconn{
+    font-size: 1.8rem;
+    display: block;
+    color: #0e579b;
+}
+.left-contentC{
+    display: flex;
+}
+.m-icon{
+    margin-top: 3rem;
+}
+.m2-icon{
+    margin-top: 4rem;
+}
+.m-text{
+    margin-top: 2rem;
+}
+.m2-text{
+    margin-top: 2.8rem;
+}
+.left2{
+    margin-left: 2rem;
+    padding: 0 1rem;
+    color: white;
+}
+.center-content{
+    /* width: 40%; */
+    margin-left: 2rem;
+}
+.main-lineC{
+    height: .2rem;
+    width: 70%;
+    background-color: #222222;
+    border-radius: 10px;
+    border: .1rem solid #4e4e4e;
+}
+.sub-lineC{
+    height: .1rem;
+    width: 40%;
+    background-color: #007ced;
+    border-radius: 10px;
+    /* border: 1px solid #4e4e4e; */
+}
+.right-contentC{
+    margin-left: 2rem;
+    /* width: 40%; */
+}
+.input-d{
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    border: 2px solid #4e4e4e;
+    background-color: #222222;
+    padding: 20px;
+    margin-top: 20px
+}
+.input-d:hover{
+    border-color: #007ced;
+}
+.send{
+    width: 40%;
+    height: 42px;
+    border: 2px solid #4e4e4e;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+.send:hover{
+    border-color: #007ced;
+}
+#feedback{
+    padding: 5px;
+    border: 2px solid #4e4e4e;
+    border-radius: 10px;
+    margin-top: 55px;
+}
+#feedback:hover{
+    border-color: #007ced;
+}
+
+
+@media screen and (max-width: 767px){
+   
+    .sidebar i{
+        font-size: 18px;
+        
+    }
+    .sidebar-content a{
+        text-decoration: none;
+        color: white;
+        padding: .8rem;
+    }
+    .home , .about , .contact{
+        display: none;
+    }
+    .home1 , .about1 , .contact1 {
+        border: 2px solid white;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: -1rem;
+    
+    }
+    .home1:hover{
+        background-color: blue;
+    }
+    .about1:hover{
+        background-color: blue;
+    }
+    .contact1:hover{
+        background-color: blue;
+    }
+    .image-div{
+        height: 15rem;
+        width: 15rem;
+    }
+    .image-div:hover{
+        transform: scale(1.2);
+    }
+    
+    .image-div img{
+        height: 15rem;
+        width: 15rem;
+    }
+   
+}
+@media screen and (max-width: 430px) {
+    .myname{
+        font-size: 1rem;
+    }
+    .logo{
+        width: 2rem;
+        height: 2rem;
+    }
+    .send{
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width: 671px) {
+    .btn-div{
+        font-size: 10px;
+    } 
+}
+@media screen and (max-width: 570px) {
+    .image-div{
+        height: 10rem;
+        width: 10rem;
+    }
+    .image-div:hover{
+        transform: scale(1.2);
+    }
+    
+    .image-div img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .heading{
+        font-size: 15px;
+    }
+    .more-about-me{
+        font-size: 12px;
+    }
+    .myname{
+        font-size: 18px;
+    }
+
+    /* .add-img-divC{
+        height: 10rem;
+    } */
+    
+   
+    
+}
+@media screen and (max-width: 475px) {
+    .layer1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-div{
+        margin-top: 2rem;
+    }
+    .work-div{
+        width: 50%;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .left2{
+        font-size: .9rem;
+    }
+    .m-text{
+        margin-top: 2.5rem;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .content-div{
+        flex-direction: column;
+    }
+    .content-right-div{
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 690px) {
+   .clients-div{
+    flex-direction: column;
+    gap: 1rem;
+   }
+}
+@media screen and (max-width: 1000px) {
+   .fun-div{
+    flex-direction: column;
+    gap: 1rem;
+   }
+   .fun1-div{
+    height: 6rem;
+    width: 10rem;
+    font-size: 10px;
+    padding: 1rem 1rem;
+   }
+   .span{
+    font-size: 2rem;
+   }
+ }
+ @media screen and (max-width: 790px) {
+    .lower-div{
+        flex-direction: column;
+    }
+    .lower-left{
+        margin-left: 3rem;
+        width: 70%;
+    }
+    .lower-right{
+        margin-top: 1rem;
+        margin-left: 3rem;
+        width: 70%;
+    }
+    .skill-div{
+        flex-direction: column;
+    }
+    .skill-right{
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+ }
+
+ @media screen and (max-width: 1025px) {
+    .content-main-divC{
+        flex-direction: column;
+    }
+    .center-content{
+        width: 70%;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .right-contentC{
+        width: 70%;
+        margin-left: 0;
+    }
+    .m-text{
+        margin-top: 2.5rem;
+    }
+    .m2-text{
+        margin-top: 3.2rem;
+    }
+    #feedback{
+        padding: 1rem;
+        border: 2px solid #4e4e4e;
+        border-radius: .5rem;
+        margin-top: 2rem;
+    }
+ }
+ @media screen and (max-width: 625px) {
+    .m2-text{
+        margin-top: 2.4rem;
+    } 
+ }
